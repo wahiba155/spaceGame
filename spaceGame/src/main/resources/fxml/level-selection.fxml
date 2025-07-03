@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.spacegame.controller.LevelSelectionController"
+      alignment="CENTER" spacing="20"
+      style="-fx-padding: 40;">
+
+    <Label text="Sélection du niveau" style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+    <Button text="Niveau 1" onAction="#startLevel1"/>
+    <Button text="Niveau 2" onAction="#startLevel2"/>
+    <Button text="Niveau 3" onAction="#startLevel3"/>
+    <Button text="Retour" onAction="#returnToMenu"/>
+
+</VBox>

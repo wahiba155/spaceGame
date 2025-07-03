@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.geometry.Insets?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.spacegame.controller.MenuController"
+           prefHeight="600.0" prefWidth="800.0"
+           style="-fx-background-color: #000000;">
+
+    <VBox alignment="CENTER" spacing="20">
+        <Label text="JEU DE L'ESPACE"
+               style="-fx-font-size: 48px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+
+        <Button fx:id="startButton" text="COMMENCER"
+                prefWidth="200" prefHeight="50"
+                style="-fx-font-size: 18px;"
+                onAction="#startGame"/>
+
+        <Button fx:id="levelButton" text="NIVEAUX"
+                prefWidth="200" prefHeight="50"
+                style="-fx-font-size: 18px;"
+                onAction="#selectLevel"/>
+
+        <Button fx:id="exitButton" text="QUITTER"
+                prefWidth="200" prefHeight="50"
+                style="-fx-font-size: 18px;"
+                onAction="#exitGame"/>
+
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+    </VBox>
+</StackPane>
